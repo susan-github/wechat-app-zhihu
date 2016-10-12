@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="page">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+  >
+    <block 
+      wx:for="{{topStories}}"
+      wx:for-item="topStory"
+    >
+      <swiper-item>
+        <view data-id="{{topStory.id}}" bindtap="handleNavToDetail">
+	        <image class="slide-image" mode="aspectFill" src="{{topStory.image}}"/>
+          <view class="slide-title">{{topStory.title}}</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <scroll-view>
+    <block
+      wx:for="{{stories}}"
+      wx:for-item="story"
+    >
+    <view 
+      class="list-item mar"
+      data-id="{{story.id}}"
+      bindtap="handleNavToDetail"  
+    >
+      <text>{{story.title}}</text>
+      <image class="list-item-thumb" mode="aspectFill" src="{{story.images[0]}}"></image>
+    </view>
+    </block>
+  </scroll-view>
+</view>

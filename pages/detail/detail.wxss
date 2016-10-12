@@ -1,0 +1,73 @@
+.banner {
+    width: 100%;
+    background-color: #888;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.banner-content {
+    height: 400rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.8);
+}
+.banner-extra {
+    text-align: right;
+    font-size: 16rpx;
+}
+.content-paragraph {
+    text-indent: 2em;
+    margin-bottom: 30rpx;
+}
+.footer {
+    height: 60rpx;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: solid 2rpx #eee;
+}
+.tab-icon {
+    height: 32rpx;
+    width: 32rpx;
+}
+.tab-badge {
+    color: #888;
+}
+.tab-badge-comment {
+    width: 36rpx;
+    height: 20rpx;
+    line-height: 24rpx;
+    position: absolute;
+    top: 0;
+    right: -20rpx;
+    text-align: center;
+    background-color: #2196f3;
+    color: #fff;
+}
+.tab-badge-comment-label {
+    transform:scale(0.6, 0.6);
+}
+.action-sheet-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    font-size: 20rpx;
+    color: #888;
+}
+.action-sheet-item {
+    flex-direction: column;
+}
+.action-sheet-icon {
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+    border-radius: 60rpx;
+}

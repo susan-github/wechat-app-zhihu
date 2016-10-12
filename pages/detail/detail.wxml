@@ -1,0 +1,57 @@
+<view class="page">
+    <scroll-view 
+        scroll-y="true" 
+        style="height: {{height}}px" 
+        scroll-into-view="{{toView}}"
+        upper-threshold="-50px"
+        bindscrolltoupper="handlePrev"
+    >
+        <block wx:for="{{ids}}">
+            <view 
+                id="{{item}}"
+                wx:if="{{toView == item}}"
+            >   
+                <view class="banner" style="background-image: url({{info.image}})">
+                    <view class="banner-content pad">
+                        <view class="banner-title font-18">{{info.title}}</view>
+                        <view class="banner-extra">图片来源：{{info.image_source}}</view>
+                    </view>
+                </view>
+                <view class="content-container mar">
+                    <block wx:for="{{info.body}}">
+                        <image class="scrollLoading" src="{{item[0]}}" mode="aspectFill" wx:if="{{item.length === 3}}"/>
+                        <view class="content-paragraph" wx:else>{{item}}</view>
+                    </block>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+    <view class="footer">
+        <view
+            class="flex-center relative {{tab.class ? tab.class : ''}}"
+            wx:for="{{tabs}}"
+            wx:for-item="tab"
+            bindtap="{{tab.action}}"
+        >
+            <image class="tab-icon" src="{{tab.icon}}"></image>
+            <view class="tab-badge tab-badge-{{tab.key}}" wx:if="{{tab.badge>0}}">
+                <view class="tab-badge-comment-label">{{tab.badge}}</view>
+            </view>
+        </view>
+    </view>
+    <action-sheet hidden="{{!showActionSheet}}" bindchange="handleActionSheetChange">
+        <view class="center mar">分享这篇文章</view>
+        <view class="action-sheet-group">
+            <view class="action-sheet-item flex-center" style="width: {{width/4}}px" wx:for="{{shares}}" data-key="{{item.key}}" bindtap="{{item.action}}">
+                <view class="action-sheet-icon flex-center" style="background-color: {{item.color}};" >
+                    <image style="width: 64rpx; height: 64rpx;" src="{{item.icon}}"></image>
+                </view>
+                <view>{{item.label}}</view>
+            </view>
+        </view>
+        <action-sheet-cancel class="font-base">取消</action-sheet-cancel>
+    </action-sheet>
+    <modal title="友情提示" confirm-text="确定" cancel-text="取消" hidden="{{!showShareModal}}" bindconfirm="handleModalChange" bindcancel="handleModalChange">
+        马上分享这篇文章到【{{activeShare.label}}】？
+    </modal>
+</view>

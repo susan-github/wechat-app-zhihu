@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/launch/launch",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/comment/comment"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2196f3",
+    "navigationBarTitleText": "知乎日报",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true
+}

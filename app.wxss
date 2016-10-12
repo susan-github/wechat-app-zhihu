@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.mar {
+  margin: 30rpx;
+}
+.pad {
+  padding: 30rpx;
+}
+.center {
+  text-align: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relative {
+  position: relative;
+}
+.font-base {
+  font-size: 28rpx;
+}
+.font-18 {
+  font-size: 36rpx;
+}
