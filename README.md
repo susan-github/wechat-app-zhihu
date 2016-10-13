@@ -41,4 +41,4 @@
 （4）scroll-view组件的scroll-into-view属性值若为数字类型的字符串，就没有办法准确跳转。
 
 ## Rendering
-<img src="https://github.com/susan-github/wechatApp-zhihu/blob/master/render.gif" width="375" height="667" alt="亦菲表演机器猫"/>
+<img src="https://github.com/susan-github/wechatApp-zhihu/blob/master/render.gif" width="375" height="667" alt="知乎日报微信小程序"/>
