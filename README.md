@@ -1,7 +1,7 @@
 # 一款模仿知乎日报的微信小程序
 
 ## Description
-微信小程序火了，虽然懒，也要试一下，刚好在github上看到知乎日报有开源的API供调用，（想要扩展更多的，可以参考[知乎日报API](https://github.com/izzyleung/ZhihuDailyPurify)
+&emsp;微信小程序火了，虽然懒，也要试一下，刚好在github上看到知乎日报有开源的API供调用，（想要扩展更多的，可以参考[知乎日报API](https://github.com/izzyleung/ZhihuDailyPurify)
 于是就拿知乎日报来练了一下手.
 
 感触如下，想到再补充：
@@ -41,5 +41,5 @@
 （4）scroll-view组件的scroll-into-view属性值若为数字类型的字符串，就没有办法准确跳转。
 
 ## Rendering
-![image](https://github.com/susan-github/wechatApp-zhihu/blob/master/render.gif)
+![image](https://github.com/susan-github/wechatApp-zhihu/blob/master/render.gif=375*667)
 
