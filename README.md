@@ -1,7 +1,7 @@
 # 一款模仿知乎日报的微信小程序
 
 ## Description
-&emsp;微信小程序火了，虽然懒，还是试一下，刚好在github上看到知乎日报有开源的API供调用，（想要扩展更多的，可以参考[知乎日报API](https://github.com/izzyleung/ZhihuDailyPurify)
+&emsp;微信小程序火了，虽然懒，还是试一下，刚好在github上看到知乎日报有开源的API供调用，想要扩展更多的，可以参考[知乎日报API](https://github.com/izzyleung/ZhihuDailyPurify)。
 
 于是就拿知乎日报来练了一下手.
 
