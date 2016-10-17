@@ -13,7 +13,7 @@
 
 [微信web开发者工具下载](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1476197490095)
 
-## Usage
+## API Usage
 
 （1）获取设备信息 wx.getSystemInfo()，通过getApp()调用。
 
@@ -25,7 +25,7 @@
 
 （4）wx.request（）
 
-（5）组件scroll-view，通过设置scroll-into-view翻页
+（5）组件scroll-view，通过设置scroll-into-view翻页，id设值不要使用数字型的字符串，否则不能正确跳转翻页。
 
 （6）组件action-sheet
 
